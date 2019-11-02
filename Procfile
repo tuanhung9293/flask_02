@@ -1,0 +1,1 @@
+uwsgi uwsgi uwsgi.ini

@@ -11,11 +11,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.secret_key = 'tony 111'
 api = Api(app)
-
-
 jwt = JWT(app, authenticate, identify)
-items = []
-
 
 api.add_resource(Item, '/item/<string:name>')
 api.add_resource(Items, '/items')
